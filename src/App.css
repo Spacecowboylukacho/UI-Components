@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+body {
+  width: 100%;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* General Button Styles */
+
+.button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-color: #8FBC8F;
+  border-width: 1px;
+  border-radius: 1rem;
+  color: #8FBC8F;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: white;
+  background-color: #8FBC8F;
+}
+
+.button:active {
+  background-color: #A5D6A7;
+  border-color: #A5D6A7;
+}
+
+
+/* General Card Element Styles */
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 15rem;
+  gap: 1rem;
+  text-align: start;
+  border-width: 1px;
+  border-color: #A5D6A7;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+}
+
