@@ -4,16 +4,17 @@ body {
   width: 100%;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.manrope-title {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* General Button Styles */
 
 .button {
+  position: relative;
   width: fit-content;
   padding: 0.5rem 1rem;
   background-color: white;
@@ -21,13 +22,9 @@ body {
   border-width: 1px;
   border-radius: 1rem;
   color: #8FBC8F;
-  transition: all 0.25s ease-in-out;
   cursor: pointer;
-}
-
-.button:hover {
-  color: white;
-  background-color: #8FBC8F;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .button:active {
@@ -56,4 +53,31 @@ body {
 .card:hover {
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+.fill:hover {
+  color: white;
+}
+
+.fill:before {
+  content: "";
+  color: white;
+  position: absolute;
+  background: #A5D6A7;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.2s ease-in-out;
+}
+
+.fill:hover:before {
+  right: 0;
+  color: white;
+}
+
+
+
+
 

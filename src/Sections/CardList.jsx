@@ -1,7 +1,7 @@
 
 
 // CardList.jsx
-import Card from './Card';
+import Card from '../Components/Card.jsx';
 
 const cardData = [
     {
@@ -50,9 +50,10 @@ const cardData = [
 
 export default function CardList() {
     return (
-        <div className="cards-container grid grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 place-items-center">
             {cardData.map(({ id, image, alt, title, description }) => (
                 <Card
+                    id={id}
                     key={id}
                     image={image}
                     alt={alt}

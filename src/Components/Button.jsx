@@ -1,8 +1,12 @@
-export default function Button(){
+import {Link} from "react-router-dom";
+
+export default function Button({ text, id}){
     return (
-        <div className="button text-black hover:text-white text-center self-end">
-            Read More
-        </div>
+        <button className="button font-[600] shadow-md hover:shadow-lg text-black hover:text-white text-center self-end fill">
+            <Link to={`/components/${id}`}>
+                {text}
+            </Link>
+        </button>
 
     )
 }
