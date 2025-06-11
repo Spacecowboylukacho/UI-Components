@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 export default function NavBar(){
     return (
-        <nav className="w-full flex flex-row justify-between px-10 py-4 sticky top-0 bg-white/80 backdrop-blur-md z-2">
+        <nav className="w-full flex flex-row justify-between px-10 py-4 sticky top-0 bg-white/80 backdrop-blur-md z-2 shadow-sm rounded-bl-lg rounded-br-lg">
             <aside className="manrope-title self-center">
                 <Link to='/'>
                     <img    src=''
@@ -13,7 +13,7 @@ export default function NavBar(){
                     StudentIn
                 </Link>
             </aside>
-            <ul className="hidden md:flex flex-row text-lg gap-4 grow-1 justify-center items-center">
+            <ul className="hidden md:flex flex-row text-lg gap-4 grow-1 justify-end px-16 items-center">
                 <li>
                     <Link to='/'>Home</Link>
                 </li>
@@ -24,7 +24,7 @@ export default function NavBar(){
                     <Link to='/about'>About</Link>
                 </li>
                 <li>
-                    <Link to='/'>Contact</Link>
+                    <Link to='/contact'>Contact</Link>
                 </li>
             </ul>
             <Button text='Log in'/>

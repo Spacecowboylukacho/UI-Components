@@ -11,6 +11,31 @@ body {
   font-style: normal;
 }
 
+.manrope-description {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* General Button Styles */
 
 .button {
@@ -75,6 +100,13 @@ body {
 .fill:hover:before {
   right: 0;
   color: white;
+}
+
+
+/* NavLink Styles */
+
+.rotate {
+  transform: rotate(30deg);
 }
 
 

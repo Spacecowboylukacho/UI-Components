@@ -12,8 +12,8 @@ export default function Card({ id, image, alt, title, description}) {
                 />
             </div>
             <div className="flex flex-col">
-                <h1>{title}</h1>
-                <p className="text-sm mb-3">{description}</p>
+                <h1 className="manrope-title">{title}</h1>
+                <p className="text-sm mb-3 manrope-description">{description}</p>
                 <Button text="Read More" id={id}/>
             </div>
         </div>
